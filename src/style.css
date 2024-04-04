@@ -1,0 +1,115 @@
+:root{
+    --primary-pale-blue:hsl(225, 100%, 94%);
+    --primary-Bright-blue: hsl(245, 75%, 52%);
+    --neutral-Very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-Desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--primary-pale-blue);
+}
+
+button{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 1em 0;
+    width: 100%;
+   cursor: pointer;
+   border-radius: 10px;
+   border: none;
+}
+/* Card  */
+.card{
+    width: 450px;
+    background-color: white;
+    color: var(--neutral-Desaturated-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+/* hero section */
+.title{
+    color: var(--neutral-Dark-blue);
+    font-weight: 900;
+    font-size: 30px;
+}
+.heroimage{
+    width: 100%;
+}
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.container .par{
+    margin-top: 30px;
+    padding: 25px 10px 30px 5px;
+   line-height: 1.2;
+}
+/* plan */
+.plan-container{
+    background-color: var(--neutral-Very-pale-blue);
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.plan-description{
+     line-height: 1.2;
+     margin-right: 75px;
+}
+.plan-container strong{
+    color: var(--neutral-Dark-blue);
+}
+
+.plan-container a{
+    color: var(--primary-Bright-blue);
+    font-weight: 700;
+}
+
+.plan-container a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/* Button */
+.proceed-btn{
+    background-color: var(--primary-Bright-blue);
+    color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.proceed-btn:hover{
+    opacity: 0.8;
+}
+.cancel-btn{
+    background-color: white;
+    color:var(--neutral-Desaturated-blue);
+    margin-top: 20px;
+   transition: 0.3s;
+}
+.cancel-btn:hover{
+    color: black;
+}
+
